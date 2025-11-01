@@ -1,0 +1,24 @@
+[submodule "roles/lidarr"]
+	path = roles/lidarr
+	url = https://github.com/r-pufky/ansible_lidarr
+[submodule "roles/deluge"]
+	path = roles/deluge
+	url = https://github.com/r-pufky/ansible_deluge
+[submodule "roles/nzbget"]
+	path = roles/nzbget
+	url = https://github.com/r-pufky/ansible_nzbget
+[submodule "roles/radarr"]
+	path = roles/radarr
+	url = https://github.com/r-pufky/ansible_radarr
+[submodule "roles/readarr"]
+	path = roles/readarr
+	url = https://github.com/r-pufky/ansible_readarr
+[submodule "roles/sonarr"]
+	path = roles/sonarr
+	url = https://github.com/r-pufky/ansible_sonarr
+[submodule "roles/whisparr"]
+	path = roles/whisparr
+	url = https://github.com/r-pufky/ansible_whisparr
+[submodule "roles/seerr"]
+	path = roles/seerr
+	url = https://github.com/r-pufky/ansible_jellyseerr
