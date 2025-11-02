@@ -1,7 +1,7 @@
 ---
 namespace: 'r_pufky'
 name: 'arr'
-version: '13.0.0'
+version: '13.0.1'
 readme: 'README.md'
 authors:
   - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
@@ -20,10 +20,10 @@ tags:
   - 'networking'
 # Update all collections with dependency changes.
 dependencies:
-  'r_pufky.lib': '>=13.0.7,<14.0.0'
-  'r_pufky.data': '>=3.0.4'
-  'r_pufky.deb': '>=13.0.9,<14.0.0'
-  'r_pufky.srv': '>=13.2.0,<14.0.0'
+  'r_pufky.lib': '>=13.0.8,<14.0.0'
+  'r_pufky.data': '>=3.0.5'
+  'r_pufky.deb': '>=13.0.10,<14.0.0'
+  'r_pufky.srv': '>=13.2.1,<14.0.0'
   'ansible.posix': '=2.1.0'
   'community.postgresql': '=4.1.0'
 
