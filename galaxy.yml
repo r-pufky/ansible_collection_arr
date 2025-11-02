@@ -5,8 +5,7 @@ version: '13.0.1'
 readme: 'README.md'
 authors:
   - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
-description: |
-  Media retrieval services for ansible.
+description: 'Media retrieval services for ansible.'
 license_file: 'LICENSE'
 tags:
   - 'media'
@@ -27,10 +26,10 @@ dependencies:
   'ansible.posix': '=2.1.0'
   'community.postgresql': '=4.1.0'
 
-repository: 'https://github.com/r-pufky/ansible_collection_srv'
+repository: 'https://github.com/r-pufky/ansible_collection_arr'
 documentation: 'https://github.com/r-pufky/ansible_collection_docs'
-homepage: 'https://github.com/r-pufky/ansible_collection_srv'
-issues: 'https://github.com/r-pufky/ansible_collection_srv/issues'
+homepage: 'https://github.com/r-pufky/ansible_collection_arr'
+issues: 'https://github.com/r-pufky/ansible_collection_arr/issues'
 
 build_ignore:
   - '*molecule/*'  # Do not include molecule testing in release.
