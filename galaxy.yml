@@ -1,7 +1,7 @@
 ---
 namespace: 'r_pufky'
 name: 'arr'
-version: '13.0.1'
+version: '13.0.2'
 readme: 'README.md'
 authors:
   - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
@@ -27,7 +27,7 @@ dependencies:
   'community.postgresql': '=4.1.0'
 
 repository: 'https://github.com/r-pufky/ansible_collection_arr'
-documentation: 'https://github.com/r-pufky/ansible_collection_docs'
+documentation: 'https://r-pufky.github.io/ansible_collection_docs'
 homepage: 'https://github.com/r-pufky/ansible_collection_arr'
 issues: 'https://github.com/r-pufky/ansible_collection_arr/issues'
 
