@@ -1,6 +1,52 @@
 ---
 # https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelog.yaml-format.md
 releases:
+  13.0.3:
+    release_date: '2025-11-17'
+    codename: '2025-11-17'
+    changes:
+      release_summary: 'Minor role updates.'
+      major_changes:
+        - 'N/A'
+      minor_changes:
+        - 'roles/lidarr - 13-3.1.0.4875-1.0.0'
+        - 'roles/radarr - 13-6.0.4.10291-1.0.0'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'deluge'
+          description: 'Deluge bittorrent client.'
+          namespace: null
+        - name: 'lidarr'
+          description: 'Lidarr installation from public release tarball.'
+          namespace: null
+        - name: 'nzbget'
+          description: 'NZBGet (nzbget.com) using maintained Debian release.'
+          namespace: null
+        - name: 'radarr'
+          description: 'Radarr installation from public release tarball.'
+          namespace: null
+        - name: 'readarr'
+          description: 'Readarr installation from public release tarball.'
+          namespace: null
+        - name: 'seerr'
+          description: 'Seerr installation from public release tarball.'
+          namespace: null
+        - name: 'sonarr'
+          description: 'Sonarr installation from public release tarball.'
+          namespace: null
+        - name: 'whisparr'
+          description: 'Whisparr installation from public release tarball.'
+          namespace: null
   13.0.2:
     release_date: '2025-11-06'
     codename: '2025-11-06'
