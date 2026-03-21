@@ -19,22 +19,30 @@ tags:
   - 'networking'
 # Update all collections with dependency changes.
 dependencies:
-  'r_pufky.lib': '>=13.0.8,<14.0.0'
-  'r_pufky.data': '>=3.0.5'
-  'r_pufky.deb': '>=13.0.10,<14.0.0'
-  'r_pufky.srv': '>=13.2.1,<14.0.0'
-  'ansible.posix': '=2.1.0'
-  'community.postgresql': '=4.1.0'
+  'r_pufky.data': '>=3.2.0,<4.0.0'
+  'r_pufky.deb': '>=4.0.0,<5.0.0'
+  'ansible.posix': '>=2.1.0,<3.0.0'
+  'community.postgresql': '>=4.2.0,<5.0.0'
 
 repository: 'https://github.com/r-pufky/ansible_collection_arr'
-documentation: 'https://r-pufky.github.io/ansible_collection_docs'
+documentation: 'https://r-pufky.github.io/ansible_docs'
 homepage: 'https://github.com/r-pufky/ansible_collection_arr'
 issues: 'https://github.com/r-pufky/ansible_collection_arr/issues'
 
+# Do not include: testing, environments, caches, IDE settings, or staging
+# messages in release tarball.
 build_ignore:
-  - '*molecule/*'  # Do not include molecule testing in release.
-  - 'ansible.env'  # Development ansible environment.
-  - '.ansible'  # Ansible collection cache for role testing.
-  - '.vscode'  # VSCodium settings.
-  - 'TODO.md'  # Development staging todo messages.
-  - 'COMMIT.md'  # Development staging commit messages.
+  - '*.ansible'
+  - '*.gitignore'
+  - '*.gitattributes'
+  - '*.gitmodules'
+  - '*.git'
+  - '*.venv'
+  - '*.envrc'
+  - '*.vscode'
+  - '*molecule'
+  - 'ansible.env'
+  - 'pyproject.toml'
+  - 'uv.lock'
+  - 'TODO.md'
+  - 'COMMIT.md'
