@@ -1,21 +1,35 @@
 ---
-# https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelog.yaml-format.md
+ancestor: 0.0.4
 releases:
-  13.0.4:
-    release_date: '2025-11-19'
-    codename: '2025-11-19'
+  1.0.0:
+    release_date: '2026-03-25'
+    codename: '2026-03-25'
     changes:
-      release_summary: 'Migrate remaining role documentation.'
+      release_summary: 'Migrate to Ansible 2.20 (breaking changes).'
       major_changes:
-        - 'N/A'
+        - 'Ansible 2.20 migration.'
+        - >
+          Dev: Backend environment updated and auto-configured resolving Molecule
+          25.1.0+ breakage (#301, #4380).
       minor_changes:
-        - 'roles/* - Migrate remaining role documentation.'
+        - 'roles/* - Migrate remaining documentation.'
       breaking_changes:
-        - 'N/A'
+        - >
+          All roles have breaking changes. As ansible 2.19 resulted in touching a
+          lot of old roles, the opportunity was used to update all roles and
+          resolve issues with them. Changes across all roles include:
+
+          * Feature Flags.
+          * Migration to semantic versioning (collection and roles).
+          * Ansible 2.20 support.
+          * Removal of unused modules in the pre-release.
+
+          All consumers must check roles. Major breaking changes will be avoided
+          again until then next round of breaking ansible changes.
       deprecated_features:
         - 'N/A'
       removed_features:
-        - 'N/A'
+        - 'roles/readarr'
       security_fixes:
         - 'N/A'
       bugfixes:
@@ -33,198 +47,6 @@ releases:
           namespace: null
         - name: 'radarr'
           description: 'Radarr installation from public release tarball.'
-          namespace: null
-        - name: 'readarr'
-          description: 'Readarr installation from public release tarball.'
-          namespace: null
-        - name: 'seerr'
-          description: 'Seerr installation from public release tarball.'
-          namespace: null
-        - name: 'sonarr'
-          description: 'Sonarr installation from public release tarball.'
-          namespace: null
-        - name: 'whisparr'
-          description: 'Whisparr installation from public release tarball.'
-          namespace: null
-  13.0.3:
-    release_date: '2025-11-17'
-    codename: '2025-11-17'
-    changes:
-      release_summary: 'Minor role updates.'
-      major_changes:
-        - 'N/A'
-      minor_changes:
-        - 'roles/lidarr - 13-3.1.0.4875-1.0.0'
-        - 'roles/radarr - 13-6.0.4.10291-1.0.0'
-      breaking_changes:
-        - 'N/A'
-      deprecated_features:
-        - 'N/A'
-      removed_features:
-        - 'N/A'
-      security_fixes:
-        - 'N/A'
-      bugfixes:
-        - 'N/A'
-    objects:
-      role:
-        - name: 'deluge'
-          description: 'Deluge bittorrent client.'
-          namespace: null
-        - name: 'lidarr'
-          description: 'Lidarr installation from public release tarball.'
-          namespace: null
-        - name: 'nzbget'
-          description: 'NZBGet (nzbget.com) using maintained Debian release.'
-          namespace: null
-        - name: 'radarr'
-          description: 'Radarr installation from public release tarball.'
-          namespace: null
-        - name: 'readarr'
-          description: 'Readarr installation from public release tarball.'
-          namespace: null
-        - name: 'seerr'
-          description: 'Seerr installation from public release tarball.'
-          namespace: null
-        - name: 'sonarr'
-          description: 'Sonarr installation from public release tarball.'
-          namespace: null
-        - name: 'whisparr'
-          description: 'Whisparr installation from public release tarball.'
-          namespace: null
-  13.0.2:
-    release_date: '2025-11-06'
-    codename: '2025-11-06'
-    changes:
-      release_summary: 'Update Sonarr to 13-4.0.6.19.2944-1.0.0.'
-      major_changes:
-        - 'roles/sonarr - Update to 13-4.0.6.19.2944-1.0.0.'
-      minor_changes:
-        - 'N/A'
-      breaking_changes:
-        - 'N/A'
-      deprecated_features:
-        - 'N/A'
-      removed_features:
-        - 'N/A'
-      security_fixes:
-        - 'N/A'
-      bugfixes:
-        - 'N/A'
-    objects:
-      role:
-        - name: 'deluge'
-          description: 'Deluge bittorrent client.'
-          namespace: null
-        - name: 'lidarr'
-          description: 'Lidarr installation from public release tarball.'
-          namespace: null
-        - name: 'nzbget'
-          description: 'NZBGet (nzbget.com) using maintained Debian release.'
-          namespace: null
-        - name: 'radarr'
-          description: 'Radarr installation from public release tarball.'
-          namespace: null
-        - name: 'readarr'
-          description: 'Readarr installation from public release tarball.'
-          namespace: null
-        - name: 'seerr'
-          description: 'Seerr installation from public release tarball.'
-          namespace: null
-        - name: 'sonarr'
-          description: 'Sonarr installation from public release tarball.'
-          namespace: null
-        - name: 'whisparr'
-          description: 'Whisparr installation from public release tarball.'
-          namespace: null
-  13.0.1:
-    release_date: '2025-11-01'
-    codename: '2025-11-01'
-    changes:
-      release_summary: 'Update README.md.'
-      major_changes:
-        - 'N/A'
-      minor_changes:
-        - 'README.md - Format updated and standardized across all collections.'
-      breaking_changes:
-        - 'N/A'
-      deprecated_features:
-        - 'N/A'
-      removed_features:
-        - 'N/A'
-      security_fixes:
-        - 'N/A'
-      bugfixes:
-        - 'N/A'
-    objects:
-      role:
-        - name: 'deluge'
-          description: 'Deluge bittorrent client.'
-          namespace: null
-        - name: 'lidarr'
-          description: 'Lidarr installation from public release tarball.'
-          namespace: null
-        - name: 'nzbget'
-          description: 'NZBGet (nzbget.com) using maintained Debian release.'
-          namespace: null
-        - name: 'radarr'
-          description: 'Radarr installation from public release tarball.'
-          namespace: null
-        - name: 'readarr'
-          description: 'Readarr installation from public release tarball.'
-          namespace: null
-        - name: 'seerr'
-          description: 'Seerr installation from public release tarball.'
-          namespace: null
-        - name: 'sonarr'
-          description: 'Sonarr installation from public release tarball.'
-          namespace: null
-        - name: 'whisparr'
-          description: 'Whisparr installation from public release tarball.'
-          namespace: null
-  13.0.0:
-    release_date: '2025-11-01'
-    codename: '2025-11-01'
-    changes:
-      release_summary: 'Create arr collection.'
-      major_changes:
-        - 'roles/deluge - migrated from r_pufky.srv.'
-        - 'roles/lidarr - migrated from r_pufky.srv.'
-        - 'roles/nzbget - migrated from r_pufky.srv.'
-        - 'roles/radarr - migrated from r_pufky.srv.'
-        - 'roles/readarr - migrated from r_pufky.srv.'
-        - 'roles/seerr - migrated from r_pufky.srv.jellyseerr.'
-        - 'roles/seerr - migrated from r_pufky.srv.overseerr.'
-        - 'roles/sonarr - migrated from r_pufky.srv.'
-        - 'roles/whisparr - migrated from r_pufky.srv.'
-      minor_changes:
-        - 'N/A'
-      breaking_changes:
-        - 'N/A'
-      deprecated_features:
-        - 'N/A'
-      removed_features:
-        - 'N/A'
-      security_fixes:
-        - 'N/A'
-      bugfixes:
-        - 'N/A'
-    objects:
-      role:
-        - name: 'deluge'
-          description: 'Deluge bittorrent client.'
-          namespace: null
-        - name: 'lidarr'
-          description: 'Lidarr installation from public release tarball.'
-          namespace: null
-        - name: 'nzbget'
-          description: 'NZBGet (nzbget.com) using maintained Debian release.'
-          namespace: null
-        - name: 'radarr'
-          description: 'Radarr installation from public release tarball.'
-          namespace: null
-        - name: 'readarr'
-          description: 'Readarr installation from public release tarball.'
           namespace: null
         - name: 'seerr'
           description: 'Seerr installation from public release tarball.'
