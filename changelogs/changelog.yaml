@@ -1,6 +1,54 @@
 ---
 ancestor: 0.0.4
 releases:
+  1.1.1:
+    release_date: '2026-04-14'
+    codename: '2026-04-14'
+    changes:
+      release_summary: 'Fix edge cases.'
+      major_changes:
+        - 'r_pufky.deb - 4.0.2 - Fix edge cases.'
+      minor_changes:
+        - 'roles/deluge - 5.1.2 - Fix edge cases.'
+        - 'roles/lidarr - 6.1.1 - Fix edge cases.'
+        - 'roles/nzbget - 5.2.1 - Fix edge cases.'
+        - 'roles/radarr - 6.1.1 - Fix edge cases.'
+        - 'roles/seerr - 6.1.1 - Fix edge cases.'
+        - 'roles/sonarr - 6.1.1 - Fix edge cases.'
+        - 'roles/whisparr - 5.1.1 - Fix edge cases.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'deluge'
+          description: 'Deluge bittorrent client.'
+          namespace: null
+        - name: 'lidarr'
+          description: 'Lidarr installation from public release tarball.'
+          namespace: null
+        - name: 'nzbget'
+          description: 'NZBGet (nzbget.com) using maintained Debian release.'
+          namespace: null
+        - name: 'radarr'
+          description: 'Radarr installation from public release tarball.'
+          namespace: null
+        - name: 'seerr'
+          description: 'Seerr installation from public release tarball.'
+          namespace: null
+        - name: 'sonarr'
+          description: 'Sonarr installation from public release tarball.'
+          namespace: null
+        - name: 'whisparr'
+          description: 'Whisparr installation from public release tarball.'
+          namespace: null
   1.1.0:
     release_date: '2026-04-10'
     codename: '2026-04-10'
