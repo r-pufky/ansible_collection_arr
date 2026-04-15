@@ -1,6 +1,50 @@
 ---
 ancestor: 0.0.4
 releases:
+  1.1.2:
+    release_date: '2026-04-15'
+    codename: '2026-04-15'
+    changes:
+      release_summary: 'Update documentation.'
+      major_changes:
+      minor_changes:
+        - 'r_pufky.data - 3.2.2 - Update documentation.'
+        - 'r_pufky.deb - 4.0.3 - Update documentation.'
+        - 'roles/* - Documentation links/glyphs updated.'
+        - 'README.md - Add note about migration to non-beta release.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'deluge'
+          description: 'Deluge bittorrent client.'
+          namespace: null
+        - name: 'lidarr'
+          description: 'Lidarr installation from public release tarball.'
+          namespace: null
+        - name: 'nzbget'
+          description: 'NZBGet (nzbget.com) using maintained Debian release.'
+          namespace: null
+        - name: 'radarr'
+          description: 'Radarr installation from public release tarball.'
+          namespace: null
+        - name: 'seerr'
+          description: 'Seerr installation from public release tarball.'
+          namespace: null
+        - name: 'sonarr'
+          description: 'Sonarr installation from public release tarball.'
+          namespace: null
+        - name: 'whisparr'
+          description: 'Whisparr installation from public release tarball.'
+          namespace: null
   1.1.1:
     release_date: '2026-04-14'
     codename: '2026-04-14'
